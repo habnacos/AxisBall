@@ -1,0 +1,140 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://Means/Scripts/Main.gd" type="Script" id=1]
+[ext_resource path="res://Scenes/Game.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scenes/Skins.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Scenes/Map.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Means/letras.png" type="Texture" id=5]
+[ext_resource path="res://Means/Fonts/Run! Demo.otf" type="DynamicFontData" id=6]
+[ext_resource path="res://Means/Sprites/Buttons/puntuacion.png" type="Texture" id=7]
+[ext_resource path="res://Means/Sprites/Buttons/skin.png" type="Texture" id=8]
+[ext_resource path="res://Means/Sprites/Buttons/sonido.png" type="Texture" id=9]
+
+[sub_resource type="DynamicFont" id=1]
+
+size = 50
+use_mipmaps = false
+use_filter = false
+font_data = ExtResource( 6 )
+_sections_unfolded = [ "Font", "Settings" ]
+
+[node name="Menu" type="Node"]
+
+script = ExtResource( 1 )
+Game = ExtResource( 2 )
+Skins = ExtResource( 3 )
+
+[node name="Map" parent="." index="0" instance=ExtResource( 4 )]
+
+[node name="Sprite" type="Sprite" parent="." index="1"]
+
+position = Vector2( 369.635, 441.994 )
+texture = ExtResource( 5 )
+
+[node name="StartButton" type="Button" parent="." index="2"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 720.0
+margin_bottom = 1661.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+custom_fonts/font = SubResource( 1 )
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+text = "START"
+flat = true
+align = 1
+_sections_unfolded = [ "custom_fonts" ]
+
+[node name="ScoresButton" type="Button" parent="." index="3"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 72.0
+margin_top = 1070.0
+margin_right = 189.0
+margin_bottom = 1180.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+icon = ExtResource( 7 )
+flat = true
+align = 1
+_sections_unfolded = [ "Rect" ]
+
+[node name="SkinsButton" type="Button" parent="." index="4"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 311.0
+margin_top = 1070.0
+margin_right = 428.0
+margin_bottom = 1180.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+icon = ExtResource( 8 )
+flat = true
+align = 1
+_sections_unfolded = [ "Rect" ]
+
+[node name="SoundButton" type="Button" parent="." index="5"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 528.0
+margin_top = 1070.0
+margin_right = 646.0
+margin_bottom = 1180.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+icon = ExtResource( 9 )
+flat = true
+align = 1
+
+[connection signal="pressed" from="StartButton" to="." method="_on_StartButton_pressed"]
+
+[connection signal="pressed" from="SkinsButton" to="." method="_on_SkinsButton_pressed"]
+
+

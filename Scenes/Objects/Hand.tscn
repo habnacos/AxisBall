@@ -1,0 +1,26 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Means/Scripts/Hand.gd" type="Script" id=1]
+[ext_resource path="res://Means/Sprites/unnamed.png" type="Texture" id=2]
+
+[node name="Hand" type="KinematicBody2D" index="0"]
+
+scale = Vector2( 0.7, 0.7 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+collision/safe_margin = 0.08
+script = ExtResource( 1 )
+_sections_unfolded = [ "Transform" ]
+speed = 1
+
+[node name="Sprite" type="Sprite" parent="." index="0"]
+
+texture = ExtResource( 2 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." index="1"]
+
+build_mode = 0
+polygon = PoolVector2Array( -81.0277, -221.466, -72.9052, -229.589, -61.1727, -230.491, -51.2452, -225.076, -47.6352, -201.611, -44.9277, -176.341, -37.7077, -142.046, -13.3402, -128.509, 10.1248, -123.996, 20.9547, -96.9213, 39.9072, -93.3113, 51.6397, -77.0663, 52.5422, -52.6988, 73.2997, -40.0638, 84.1297, -22.0138, 84.1297, -2.15884, 88.6422, 5.96365, 83.2272, 19.5011, 78.7147, 51.9911, 62.4697, 88.9936, 61.9998, 129, 59.9998, 172, 67.9998, 226, 45.9998, 238, -11.0002, 238, -45.0002, 226, -41.0002, 181, -49.0002, 125, -52.0002, 96.9999, -70.0002, 51.9999, -71.0002, 26, -76.0001, 6.99996, -69.0002, -15, -69.0002, -48, -69.6458, -84.4783, -76.9967, -116.087, -79.2019, -133.729, -84.3476, -174.895 )
+
+

@@ -1,0 +1,151 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://Means/Scripts/Skins.gd" type="Script" id=1]
+[ext_resource path="res://Scenes/Map.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Means/Fonts/digital-7.regular.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://Means/Sprites/Skins/ball2.png" type="Texture" id=4]
+[ext_resource path="res://Means/Sprites/Skins/ball1.png" type="Texture" id=5]
+[ext_resource path="res://Means/Sprites/Skins/basketball.png" type="Texture" id=6]
+[ext_resource path="res://Means/Sprites/Buttons/Home.png" type="Texture" id=7]
+
+[sub_resource type="DynamicFont" id=1]
+
+size = 125
+use_mipmaps = false
+use_filter = false
+font_data = ExtResource( 3 )
+_sections_unfolded = [ "Font", "Settings" ]
+
+[node name="Skins" type="Node2D" index="0"]
+
+script = ExtResource( 1 )
+Home = null
+
+[node name="Map" parent="." index="0" instance=ExtResource( 2 )]
+
+[node name="Label" type="Label" parent="." index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 232.0
+margin_top = 98.0
+margin_right = 488.0
+margin_bottom = 167.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = SubResource( 1 )
+text = "SKINS"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "custom_fonts" ]
+
+[node name="Soccer" type="Button" parent="." index="2"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 274.0
+margin_top = 356.0
+margin_right = 454.0
+margin_bottom = 509.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+icon = ExtResource( 4 )
+flat = true
+align = 1
+
+[node name="Soccer2" type="Button" parent="." index="3"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 47.0
+margin_top = 356.0
+margin_right = 227.0
+margin_bottom = 510.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+icon = ExtResource( 5 )
+flat = true
+align = 1
+
+[node name="Baseball" type="Button" parent="." index="4"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 486.0
+margin_top = 351.0
+margin_right = 666.0
+margin_bottom = 506.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+icon = ExtResource( 6 )
+flat = true
+align = 1
+
+[node name="Home" type="Button" parent="." index="5"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 336.0
+margin_top = 1110.0
+margin_right = 453.0
+margin_bottom = 1221.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+icon = ExtResource( 7 )
+flat = true
+align = 1
+
+[connection signal="pressed" from="Home" to="." method="_on_Home_pressed"]
+
+
