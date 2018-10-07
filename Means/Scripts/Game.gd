@@ -1,6 +1,6 @@
 extends Node
 
-export (PackedScene) var RoundBall
+export (PackedScene) var Ball
 var _object
 var _time = 0
 var _score = 0
@@ -11,7 +11,7 @@ func _ready():
 func game_new():
 	_time = 0
 	_score = 0
-	_object = RoundBall.instance()
+	_object = Ball.instance()
 	add_child(_object)
 	_object.position = $PositionObject.position
 	$Hand.position = $PositionHand.position
