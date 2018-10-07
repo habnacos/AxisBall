@@ -1,35 +1,36 @@
 extends KinematicBody2D
 
-export (int) var speed
 signal move
-var screensize
 
 func _ready():
 	set_process_input(true)
-	screensize = get_viewport_rect().size
+	$H1.hide()
+	$H2.hide()
+	$H3.hide()
+	$H4.hide()
+	$C1_2.disabled = true
+	$C3_4.disabled = true
 
 func _input(event):
 	if event is InputEventScreenDrag:
-		emit_signal("move")
 		position.x = event.position.x
+		emit_signal("move")
 
-func _process(delta):
-	mover_mano(delta)
+func hand(var hand):
+	if hand == 1:
+		$H1.show()
+		$C1_2.disabled = false
+	elif hand == 2:
+		$H2.show()
+		$C1_2.disabled = false
+	elif hand == 3:
+		$H3.show()
+		$C3_4.disabled = false
+	elif hand == 4:
+		$H4.show()
+		$C3_4.disabled = false
 
-func mover_mano(delta):
-	var velocity = Vector2()
-		
-	if Input.is_action_pressed("ui_right"):
-		velocity.x += 1
-	if Input.is_action_pressed("ui_left"):
-		velocity.x -= 1
-	if Input.is_action_pressed("ui_up"):
-		velocity.y -= 1
-	if Input.is_action_pressed("ui_down"):
-		velocity.y += 1
-	
-	if velocity.length() > 0:
-		velocity = velocity.normalized() * speed
-	position += velocity * delta
-	position.x = clamp(position.x, 55, screensize.x)
-	position.y = clamp(position.y, 0, screensize.y)
+#func _process(delta):
+#	# Called every frame. Delta is time since last frame.
+#	# Update game logic here.
+#	pass
