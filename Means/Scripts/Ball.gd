@@ -7,7 +7,7 @@ var _soccer = 		[1.8,   0.65,   80]
 func _ready():
 	pass
 
-func new_game(var _ball):
+func ball(var _ball):
 	$AnimatedSprite.animation = _ball
 	if _ball == "Baseball":
 		$AnimatedSprite.scale = Vector2(_baseball[1], _baseball[1])

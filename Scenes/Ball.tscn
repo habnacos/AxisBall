@@ -121,7 +121,7 @@ __meta__ = {
 scale = Vector2( 0.65, 0.65 )
 frames = SubResource( 1 )
 animation = "Soccer"
-frame = 8
+frame = 7
 playing = true
 _sections_unfolded = [ "Transform" ]
 

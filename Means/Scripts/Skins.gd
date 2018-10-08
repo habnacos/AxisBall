@@ -1,21 +1,22 @@
-extends Node2D
-
-export (PackedScene) var Home
+extends Node
 
 # class member variables go here, for example:
 # var a = 2
 # var b = "textvar"
 
 func _ready():
-	# Called when the node is added to the scene for the first time.
-	# Initialization here
-	pass
+	var _file = File.new()
+	_file.open("res://Means/records.json", File.READ)
+	var _map = JSON.parse(_file.get_as_text())
+	_map = _map.result
+	$Map.map(_map['Sinks']['map'])
 
-#func _process(delta):
-#	# Called every frame. Delta is time since last frame.
-#	# Update game logic here.
-#	pass
+func _on_object_pressed():
+	get_tree().change_scene("res://Scenes/SkinBall.tscn")
+	
+func _on_hand_pressed():
+	get_tree().change_scene("res://Scenes/SkinHand.tscn")
 
+func _on_map_pressed():
+	get_tree().change_scene("res://Scenes/SkinMap.tscn")
 
-func _on_Home_pressed():
-	get_tree().change_scene_to(Home)

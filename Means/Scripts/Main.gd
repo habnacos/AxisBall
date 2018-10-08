@@ -1,18 +1,12 @@
 extends Node
 
 export (PackedScene) var Game
-export (PackedScene) var Skins
-var game
 
 func _ready():
-	pass
-
-#func _process(delta):
-
+	$Map.map(1)
 
 func _on_StartButton_pressed():
 	get_tree().change_scene_to(Game)
 
-
 func _on_SkinsButton_pressed():
-	get_tree().change_scene_to(Skins)
+	get_tree().change_scene("res://Scenes/SkinBall.tscn")

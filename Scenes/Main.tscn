@@ -21,7 +21,6 @@ _sections_unfolded = [ "Font", "Settings" ]
 
 script = ExtResource( 1 )
 Game = ExtResource( 2 )
-Skins = null
 
 [node name="Map" parent="." index="0" instance=ExtResource( 3 )]
 
