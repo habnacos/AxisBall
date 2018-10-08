@@ -1,0 +1,168 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Scenes/Map.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Means/Sprites/Buttons/record.png" type="Texture" id=2]
+[ext_resource path="res://Means/Fonts/Starjedi.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://Means/Sprites/Buttons/Home.png" type="Texture" id=4]
+[ext_resource path="res://Means/Sprites/Buttons/barraPuntaje.png" type="Texture" id=5]
+
+[sub_resource type="DynamicFont" id=1]
+
+size = 51
+use_mipmaps = true
+use_filter = false
+font_data = ExtResource( 3 )
+_sections_unfolded = [ "Font", "Settings" ]
+
+[node name="Score" type="Node" index="0"]
+
+[node name="Map" parent="." index="0" instance=ExtResource( 1 )]
+
+position = Vector2( 0, 4.54419 )
+
+[node name="tofeo" type="TextureButton" parent="." index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 236.0
+margin_top = 106.0
+margin_right = 480.0
+margin_bottom = 390.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+texture_normal = ExtResource( 2 )
+expand = true
+_sections_unfolded = [ "Textures" ]
+
+[node name="score" type="Label" parent="." index="2"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 266.0
+margin_top = 391.0
+margin_right = 446.0
+margin_bottom = 473.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = SubResource( 1 )
+text = "Score"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "custom_fonts" ]
+
+[node name="casa" type="TextureButton" parent="." index="3"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 25.0
+margin_top = 25.0
+margin_right = 101.0
+margin_bottom = 100.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+texture_normal = ExtResource( 4 )
+expand = true
+_sections_unfolded = [ "Textures" ]
+
+[node name="TextureButton" type="TextureButton" parent="." index="4"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 93.0
+margin_top = 595.0
+margin_right = 615.0
+margin_bottom = 668.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+texture_normal = ExtResource( 5 )
+_sections_unfolded = [ "Textures" ]
+
+[node name="TextureButton3" type="TextureButton" parent="." index="5"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 93.0
+margin_top = 744.0
+margin_right = 615.0
+margin_bottom = 817.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+texture_normal = ExtResource( 5 )
+_sections_unfolded = [ "Textures" ]
+
+[node name="TextureButton5" type="TextureButton" parent="." index="6"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 93.0
+margin_top = 894.0
+margin_right = 615.0
+margin_bottom = 967.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+texture_normal = ExtResource( 5 )
+_sections_unfolded = [ "Textures" ]
+
+
