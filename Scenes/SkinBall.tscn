@@ -30,7 +30,7 @@ use_filter = false
 font_data = ExtResource( 11 )
 _sections_unfolded = [ "Font", "Settings" ]
 
-[node name="SkinBall" type="Node"]
+[node name="SkinBall" type="Node" index="0"]
 
 [node name="Map" parent="." index="0" instance=ExtResource( 1 )]
 
@@ -366,6 +366,7 @@ _sections_unfolded = [ "custom_fonts" ]
 
 [node name="barra" type="TextureButton" parent="." index="14"]
 
+editor/display_folded = true
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
@@ -389,16 +390,14 @@ texture_normal = ExtResource( 12 )
 expand = true
 _sections_unfolded = [ "Textures" ]
 
-[node name="TextureButton" type="TextureButton" parent="." index="15"]
+[node name="barraFucsia" type="TextureButton" parent="barra" index="0"]
 
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 84.0
-margin_top = 399.0
-margin_right = 299.0
-margin_bottom = 412.0
+margin_right = 215.0
+margin_bottom = 13.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 focus_mode = 2
