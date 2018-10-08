@@ -89,17 +89,17 @@ _sections_unfolded = [ "Resource" ]
 [sub_resource type="CircleShape2D" id=2]
 
 custom_solver_bias = 0.0
-radius = 42.3551
+radius = 59.8122
 
-[node name="Ball" type="RigidBody2D" index="0"]
+[node name="Ball" type="RigidBody2D"]
 
 input_pickable = false
 collision_layer = 1
 collision_mask = 1
 mode = 0
-mass = 1.0
+mass = 30.0
 friction = 1.0
-bounce = 1.0
+bounce = 0.7
 gravity_scale = 0.0
 custom_integrator = false
 continuous_cd = 0
@@ -112,18 +112,23 @@ linear_damp = -1.0
 angular_velocity = 0.0
 angular_damp = -1.0
 script = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="." index="0"]
 
 scale = Vector2( 0.65, 0.65 )
 frames = SubResource( 1 )
-animation = "Baseball"
-frame = 6
+animation = "Soccer"
+frame = 8
 playing = true
 _sections_unfolded = [ "Transform" ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." index="1"]
 
+scale = Vector2( 1.8, 1.8 )
 shape = SubResource( 2 )
+_sections_unfolded = [ "Transform" ]
 
 

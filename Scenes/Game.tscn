@@ -33,8 +33,6 @@ Ball = ExtResource( 2 )
 
 [node name="Hand" parent="." index="1" instance=ExtResource( 4 )]
 
-position = Vector2( 368.06, 815.322 )
-
 [node name="PositionHand" type="Position2D" parent="." index="2"]
 
 position = Vector2( 403.295, 1031.7 )
