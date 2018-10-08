@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=17 format=2]
 
 [ext_resource path="res://Means/Scripts/Skins.gd" type="Script" id=1]
 [ext_resource path="res://Scenes/Map.tscn" type="PackedScene" id=2]
@@ -6,10 +6,14 @@
 [ext_resource path="res://Means/Sprites/Buttons/barra.png" type="Texture" id=4]
 [ext_resource path="res://Means/Sprites/Buttons/barraFucsia.png" type="Texture" id=5]
 [ext_resource path="res://Means/Sprites/Hands/1.png" type="Texture" id=6]
-[ext_resource path="res://Means/Sprites/Hands/2.png" type="Texture" id=7]
-[ext_resource path="res://Means/Sprites/Hands/3.png" type="Texture" id=8]
-[ext_resource path="res://Means/Sprites/Hands/4.png" type="Texture" id=9]
-[ext_resource path="res://Means/Sprites/Buttons/Home.png" type="Texture" id=10]
+[ext_resource path="res://Means/Sprites/Hands/focus1.png" type="Texture" id=7]
+[ext_resource path="res://Means/Sprites/Hands/2.png" type="Texture" id=8]
+[ext_resource path="res://Means/Sprites/Hands/focus2.png" type="Texture" id=9]
+[ext_resource path="res://Means/Sprites/Hands/3.png" type="Texture" id=10]
+[ext_resource path="res://Means/Sprites/Hands/focus3.png" type="Texture" id=11]
+[ext_resource path="res://Means/Sprites/Hands/4.png" type="Texture" id=12]
+[ext_resource path="res://Means/Sprites/Hands/focus4.png" type="Texture" id=13]
+[ext_resource path="res://Means/Sprites/Buttons/Home.png" type="Texture" id=14]
 
 [sub_resource type="DynamicFont" id=1]
 
@@ -64,9 +68,9 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 114.0
+margin_left = 86.0
 margin_top = 333.0
-margin_right = 273.0
+margin_right = 300.0
 margin_bottom = 397.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
@@ -92,9 +96,9 @@ anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_left = 304.0
-margin_top = 336.0
+margin_top = 334.0
 margin_right = 463.0
-margin_bottom = 400.0
+margin_bottom = 398.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 focus_mode = 2
@@ -118,9 +122,9 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 454.0
+margin_left = 466.0
 margin_top = 333.0
-margin_right = 630.0
+margin_right = 632.0
 margin_bottom = 397.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
@@ -141,7 +145,6 @@ _sections_unfolded = [ "custom_fonts" ]
 
 [node name="barra" type="TextureButton" parent="." index="5"]
 
-editor/display_folded = true
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
@@ -171,10 +174,10 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 218.0
-margin_top = 1.0
-margin_right = 382.0
-margin_bottom = 15.0
+margin_left = 220.0
+margin_top = -1.0
+margin_right = 384.0
+margin_bottom = 13.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 focus_mode = 2
@@ -227,6 +230,7 @@ enabled_focus_mode = 2
 shortcut = null
 group = null
 texture_normal = ExtResource( 6 )
+texture_focused = ExtResource( 7 )
 expand = true
 _sections_unfolded = [ "Textures" ]
 
@@ -251,7 +255,8 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-texture_normal = ExtResource( 7 )
+texture_normal = ExtResource( 8 )
+texture_focused = ExtResource( 9 )
 expand = true
 _sections_unfolded = [ "Textures" ]
 
@@ -276,7 +281,8 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-texture_normal = ExtResource( 8 )
+texture_normal = ExtResource( 10 )
+texture_focused = ExtResource( 11 )
 expand = true
 _sections_unfolded = [ "Textures" ]
 
@@ -301,7 +307,8 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-texture_normal = ExtResource( 9 )
+texture_normal = ExtResource( 12 )
+texture_focused = ExtResource( 13 )
 expand = true
 _sections_unfolded = [ "Textures" ]
 
@@ -311,10 +318,10 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 319.0
-margin_top = 1113.0
-margin_right = 452.0
-margin_bottom = 1240.0
+margin_left = 19.0
+margin_top = 22.0
+margin_right = 104.0
+margin_bottom = 104.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 focus_mode = 2
@@ -326,7 +333,7 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-texture_normal = ExtResource( 10 )
+texture_normal = ExtResource( 14 )
 expand = true
 _sections_unfolded = [ "Textures" ]
 

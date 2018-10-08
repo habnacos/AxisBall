@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=2]
+[gd_scene load_steps=25 format=2]
 
 [ext_resource path="res://Means/Scripts/Skins.gd" type="Script" id=1]
 [ext_resource path="res://Scenes/Map.tscn" type="PackedScene" id=2]
@@ -6,14 +6,22 @@
 [ext_resource path="res://Means/Sprites/Buttons/barra.png" type="Texture" id=4]
 [ext_resource path="res://Means/Sprites/Buttons/barraFucsia.png" type="Texture" id=5]
 [ext_resource path="res://Means/Sprites/Maps/m11.png" type="Texture" id=6]
-[ext_resource path="res://Means/Sprites/Maps/m8.png" type="Texture" id=7]
-[ext_resource path="res://Means/Sprites/Maps/m9.png" type="Texture" id=8]
-[ext_resource path="res://Means/Sprites/Maps/m10.png" type="Texture" id=9]
-[ext_resource path="res://Means/Sprites/Maps/m12.png" type="Texture" id=10]
-[ext_resource path="res://Means/Sprites/Maps/m13.png" type="Texture" id=11]
-[ext_resource path="res://Means/Sprites/Maps/map.png" type="Texture" id=12]
-[ext_resource path="res://Means/Sprites/Maps/mU.png" type="Texture" id=13]
-[ext_resource path="res://Means/Sprites/Buttons/Home.png" type="Texture" id=14]
+[ext_resource path="res://Means/Sprites/Maps/focusMap/mFocus2.png" type="Texture" id=7]
+[ext_resource path="res://Means/Sprites/Maps/m8.png" type="Texture" id=8]
+[ext_resource path="res://Means/Sprites/Maps/focusMap/mFocus7.png" type="Texture" id=9]
+[ext_resource path="res://Means/Sprites/Maps/m9.png" type="Texture" id=10]
+[ext_resource path="res://Means/Sprites/Maps/focusMap/mFocus6.png" type="Texture" id=11]
+[ext_resource path="res://Means/Sprites/Maps/m10.png" type="Texture" id=12]
+[ext_resource path="res://Means/Sprites/Maps/focusMap/mFocus1.png" type="Texture" id=13]
+[ext_resource path="res://Means/Sprites/Maps/m12.png" type="Texture" id=14]
+[ext_resource path="res://Means/Sprites/Maps/focusMap/mFocus3.png" type="Texture" id=15]
+[ext_resource path="res://Means/Sprites/Maps/m13.png" type="Texture" id=16]
+[ext_resource path="res://Means/Sprites/Maps/focusMap/mFocus8.png" type="Texture" id=17]
+[ext_resource path="res://Means/Sprites/Maps/map.png" type="Texture" id=18]
+[ext_resource path="res://Means/Sprites/Maps/focusMap/mFocus4.png" type="Texture" id=19]
+[ext_resource path="res://Means/Sprites/Maps/mU.png" type="Texture" id=20]
+[ext_resource path="res://Means/Sprites/Maps/focusMap/mFocus5.png" type="Texture" id=21]
+[ext_resource path="res://Means/Sprites/Buttons/Home.png" type="Texture" id=22]
 
 [sub_resource type="DynamicFont" id=1]
 
@@ -68,10 +76,10 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 114.0
-margin_top = 333.0
-margin_right = 273.0
-margin_bottom = 397.0
+margin_left = 82.0
+margin_top = 329.0
+margin_right = 295.0
+margin_bottom = 415.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 focus_mode = 2
@@ -98,7 +106,7 @@ anchor_bottom = 0.0
 margin_left = 304.0
 margin_top = 336.0
 margin_right = 463.0
-margin_bottom = 400.0
+margin_bottom = 413.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 focus_mode = 2
@@ -122,10 +130,10 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 454.0
+margin_left = 470.0
 margin_top = 333.0
 margin_right = 630.0
-margin_bottom = 397.0
+margin_bottom = 413.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 focus_mode = 2
@@ -230,6 +238,7 @@ enabled_focus_mode = 2
 shortcut = null
 group = null
 texture_normal = ExtResource( 6 )
+texture_focused = ExtResource( 7 )
 expand = true
 _sections_unfolded = [ "Textures" ]
 
@@ -254,7 +263,8 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-texture_normal = ExtResource( 7 )
+texture_normal = ExtResource( 8 )
+texture_focused = ExtResource( 9 )
 expand = true
 _sections_unfolded = [ "Textures" ]
 
@@ -279,7 +289,8 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-texture_normal = ExtResource( 8 )
+texture_normal = ExtResource( 10 )
+texture_focused = ExtResource( 11 )
 expand = true
 _sections_unfolded = [ "Textures" ]
 
@@ -304,7 +315,8 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-texture_normal = ExtResource( 9 )
+texture_normal = ExtResource( 12 )
+texture_focused = ExtResource( 13 )
 expand = true
 _sections_unfolded = [ "Textures" ]
 
@@ -329,7 +341,8 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-texture_normal = ExtResource( 10 )
+texture_normal = ExtResource( 14 )
+texture_focused = ExtResource( 15 )
 expand = true
 _sections_unfolded = [ "Textures" ]
 
@@ -354,7 +367,8 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-texture_normal = ExtResource( 11 )
+texture_normal = ExtResource( 16 )
+texture_focused = ExtResource( 17 )
 expand = true
 _sections_unfolded = [ "Textures" ]
 
@@ -364,10 +378,10 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 81.0
-margin_top = 504.0
-margin_right = 245.0
-margin_bottom = 708.0
+margin_left = 89.0
+margin_top = 506.0
+margin_right = 237.0
+margin_bottom = 704.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 focus_mode = 2
@@ -379,7 +393,8 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-texture_normal = ExtResource( 12 )
+texture_normal = ExtResource( 18 )
+texture_focused = ExtResource( 19 )
 expand = true
 _sections_unfolded = [ "Textures" ]
 
@@ -404,7 +419,8 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-texture_normal = ExtResource( 13 )
+texture_normal = ExtResource( 20 )
+texture_focused = ExtResource( 21 )
 expand = true
 _sections_unfolded = [ "Textures" ]
 
@@ -414,10 +430,10 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 514.0
-margin_top = 1127.0
-margin_right = 647.0
-margin_bottom = 1254.0
+margin_left = 16.0
+margin_top = 18.0
+margin_right = 102.0
+margin_bottom = 100.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 focus_mode = 2
@@ -429,7 +445,7 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-texture_normal = ExtResource( 14 )
+texture_normal = ExtResource( 22 )
 expand = true
 _sections_unfolded = [ "Textures" ]
 
