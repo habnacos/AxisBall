@@ -1,0 +1,417 @@
+[gd_scene load_steps=16 format=2]
+
+[ext_resource path="res://Scenes/Map.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Means/Sprites/Skins/ball/bola1.png" type="Texture" id=2]
+[ext_resource path="res://Means/Sprites/Skins/ball/bola2.png" type="Texture" id=3]
+[ext_resource path="res://Means/Sprites/Skins/ball/bola3.png" type="Texture" id=4]
+[ext_resource path="res://Means/Sprites/Skins/ball/bola4.png" type="Texture" id=5]
+[ext_resource path="res://Means/Sprites/Skins/ball/bola5.png" type="Texture" id=6]
+[ext_resource path="res://Means/Sprites/Skins/ball/bola6.png" type="Texture" id=7]
+[ext_resource path="res://Means/Sprites/Skins/ball/ball7.png" type="Texture" id=8]
+[ext_resource path="res://Means/Sprites/Skins/ball/bola8.png" type="Texture" id=9]
+[ext_resource path="res://Means/Sprites/Skins/ball/bola9.png" type="Texture" id=10]
+[ext_resource path="res://Means/Fonts/Starjedi.ttf" type="DynamicFontData" id=11]
+[ext_resource path="res://Means/Sprites/Buttons/barra.png" type="Texture" id=12]
+[ext_resource path="res://Means/Sprites/Buttons/barraFucsia.png" type="Texture" id=13]
+
+[sub_resource type="DynamicFont" id=1]
+
+size = 101
+use_mipmaps = false
+use_filter = false
+font_data = ExtResource( 11 )
+_sections_unfolded = [ "Font", "Font/fallback", "Settings" ]
+
+[sub_resource type="DynamicFont" id=2]
+
+size = 36
+use_mipmaps = false
+use_filter = false
+font_data = ExtResource( 11 )
+_sections_unfolded = [ "Font", "Settings" ]
+
+[node name="SkinBall" type="Node" index="0"]
+
+[node name="Map" parent="." index="0" instance=ExtResource( 1 )]
+
+position = Vector2( 1.36035, -4.08109 )
+
+[node name="ball1" type="TextureButton" parent="." index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 93.0
+margin_top = 480.0
+margin_right = 234.0
+margin_bottom = 621.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+texture_normal = ExtResource( 2 )
+expand = true
+_sections_unfolded = [ "Textures" ]
+
+[node name="ball2" type="TextureButton" parent="." index="2"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 280.0
+margin_top = 475.0
+margin_right = 429.0
+margin_bottom = 619.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+texture_normal = ExtResource( 3 )
+expand = true
+_sections_unfolded = [ "Textures" ]
+
+[node name="ball3" type="TextureButton" parent="." index="3"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 474.0
+margin_top = 467.0
+margin_right = 629.0
+margin_bottom = 630.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+texture_normal = ExtResource( 4 )
+expand = true
+_sections_unfolded = [ "Textures" ]
+
+[node name="ball4" type="TextureButton" parent="." index="4"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 84.0
+margin_top = 706.0
+margin_right = 235.0
+margin_bottom = 853.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+texture_normal = ExtResource( 5 )
+expand = true
+_sections_unfolded = [ "Textures" ]
+
+[node name="ball5" type="TextureButton" parent="." index="5"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 311.0
+margin_top = 736.0
+margin_right = 404.0
+margin_bottom = 827.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+texture_normal = ExtResource( 6 )
+_sections_unfolded = [ "Textures" ]
+
+[node name="ball6" type="TextureButton" parent="." index="6"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 481.0
+margin_top = 685.0
+margin_right = 642.0
+margin_bottom = 849.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+texture_normal = ExtResource( 7 )
+expand = true
+_sections_unfolded = [ "Textures" ]
+
+[node name="ball7" type="TextureButton" parent="." index="7"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 95.0
+margin_top = 909.0
+margin_right = 244.0
+margin_bottom = 1060.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+texture_normal = ExtResource( 8 )
+expand = true
+_sections_unfolded = [ "Textures" ]
+
+[node name="ball8" type="TextureButton" parent="." index="8"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 287.0
+margin_top = 916.0
+margin_right = 425.0
+margin_bottom = 1051.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+texture_normal = ExtResource( 9 )
+expand = true
+_sections_unfolded = [ "Textures" ]
+
+[node name="ball9" type="TextureButton" parent="." index="9"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 486.0
+margin_top = 905.0
+margin_right = 642.0
+margin_bottom = 1056.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+texture_normal = ExtResource( 10 )
+expand = true
+_sections_unfolded = [ "Textures" ]
+
+[node name="skin" type="Label" parent="." index="10"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 243.0
+margin_top = 54.0
+margin_right = 466.0
+margin_bottom = 216.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = SubResource( 1 )
+text = "Skin"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "custom_fonts" ]
+
+[node name="object" type="Button" parent="." index="11"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 114.0
+margin_top = 333.0
+margin_right = 273.0
+margin_bottom = 397.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+custom_fonts/font = SubResource( 2 )
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+text = "object"
+flat = true
+align = 1
+_sections_unfolded = [ "custom_fonts" ]
+
+[node name="hand" type="Button" parent="." index="12"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 304.0
+margin_top = 336.0
+margin_right = 463.0
+margin_bottom = 400.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+custom_fonts/font = SubResource( 2 )
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+text = "hand"
+flat = true
+align = 1
+_sections_unfolded = [ "custom_fonts" ]
+
+[node name="map" type="Button" parent="." index="13"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 454.0
+margin_top = 333.0
+margin_right = 630.0
+margin_bottom = 397.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+custom_fonts/font = SubResource( 2 )
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+text = "map"
+flat = true
+align = 1
+_sections_unfolded = [ "custom_fonts" ]
+
+[node name="barra" type="TextureButton" parent="." index="14"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 84.0
+margin_top = 399.0
+margin_right = 631.0
+margin_bottom = 412.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+texture_normal = ExtResource( 12 )
+expand = true
+_sections_unfolded = [ "Textures" ]
+
+[node name="TextureButton" type="TextureButton" parent="." index="15"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 84.0
+margin_top = 399.0
+margin_right = 299.0
+margin_bottom = 412.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+texture_normal = ExtResource( 13 )
+expand = true
+_sections_unfolded = [ "Textures" ]
+
+

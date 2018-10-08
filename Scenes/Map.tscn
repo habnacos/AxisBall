@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=2]
 
-[ext_resource path="res://Means/Sprites/Maps/m8.png" type="Texture" id=1]
+[ext_resource path="res://Means/Sprites/Maps/mapa.png" type="Texture" id=1]
 
 [node name="Map" type="StaticBody2D"]
 
@@ -14,7 +14,7 @@ bounce = 0.0
 
 [node name="Map" type="Sprite" parent="." index="0"]
 
-scale = Vector2( 1.05112, 1.1439 )
+scale = Vector2( 1.14222, 1.13973 )
 texture = ExtResource( 1 )
 centered = false
 region_rect = Rect2( 0, 0, 720, 1280 )
