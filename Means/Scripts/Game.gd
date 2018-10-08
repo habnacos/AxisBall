@@ -8,20 +8,21 @@ var _skins
 
 func _ready():
 	var _file = File.new()
-	_file.open("res://Means/records.json", File.READ)
+	_file.open("res://Means/records.gd", File.READ)
 	_skins = JSON.parse(_file.get_as_text())
+	_file.close()
 	_skins = _skins.result
-	$Map.map(_skins['Sinks']['map'])
+	$Map.map(_skins['Skins']['map'])
 	game_new()
 
 func game_new():
 	_time = 0
 	_score = 0
 	_object = Ball.instance()
-	_object.ball(_skins['Sinks']['ball'])
+	_object.ball(_skins['Skins']['ball'])
 	add_child(_object)
 	_object.position = $PositionObject.position
-	$Hand.hand(_skins['Sinks']['hand'])
+	$Hand.hand(_skins['Skins']['hand'])
 	$Hand.position = $PositionHand.position
 	$TimerScore.start()
 	$TimerTime.start()

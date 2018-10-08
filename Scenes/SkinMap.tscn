@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=2]
+[gd_scene load_steps=17 format=2]
 
 [ext_resource path="res://Means/Scripts/Skins.gd" type="Script" id=1]
 [ext_resource path="res://Scenes/Map.tscn" type="PackedScene" id=2]
@@ -13,6 +13,7 @@
 [ext_resource path="res://Means/Sprites/Maps/m13.png" type="Texture" id=11]
 [ext_resource path="res://Means/Sprites/Maps/map.png" type="Texture" id=12]
 [ext_resource path="res://Means/Sprites/Maps/mU.png" type="Texture" id=13]
+[ext_resource path="res://Means/Sprites/Buttons/Home.png" type="Texture" id=14]
 
 [sub_resource type="DynamicFont" id=1]
 
@@ -30,13 +31,13 @@ use_filter = false
 font_data = ExtResource( 3 )
 _sections_unfolded = [ "Font", "Settings" ]
 
-[node name="SkinMap" type="Node"]
+[node name="SkinMap" type="Node" index="0"]
 
 script = ExtResource( 1 )
 
 [node name="Map" parent="." index="0" instance=ExtResource( 2 )]
 
-position = Vector2( 0, 2.27206 )
+_sections_unfolded = [ "Transform" ]
 
 [node name="skin" type="Label" parent="." index="1"]
 
@@ -192,7 +193,22 @@ texture_normal = ExtResource( 5 )
 expand = true
 _sections_unfolded = [ "Textures" ]
 
-[node name="M4" type="TextureButton" parent="." index="7"]
+[node name="Maps" type="Container" parent="." index="7"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 40.0
+margin_bottom = 40.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+
+[node name="M4" type="TextureButton" parent="Maps" index="0"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -217,7 +233,7 @@ texture_normal = ExtResource( 6 )
 expand = true
 _sections_unfolded = [ "Textures" ]
 
-[node name="M7" type="TextureButton" parent="." index="8"]
+[node name="M7" type="TextureButton" parent="Maps" index="1"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -242,7 +258,7 @@ texture_normal = ExtResource( 7 )
 expand = true
 _sections_unfolded = [ "Textures" ]
 
-[node name="M2" type="TextureButton" parent="." index="9"]
+[node name="M2" type="TextureButton" parent="Maps" index="2"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -267,7 +283,7 @@ texture_normal = ExtResource( 8 )
 expand = true
 _sections_unfolded = [ "Textures" ]
 
-[node name="M3" type="TextureButton" parent="." index="10"]
+[node name="M3" type="TextureButton" parent="Maps" index="3"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -292,7 +308,7 @@ texture_normal = ExtResource( 9 )
 expand = true
 _sections_unfolded = [ "Textures" ]
 
-[node name="M5" type="TextureButton" parent="." index="11"]
+[node name="M5" type="TextureButton" parent="Maps" index="4"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -317,7 +333,7 @@ texture_normal = ExtResource( 10 )
 expand = true
 _sections_unfolded = [ "Textures" ]
 
-[node name="M6" type="TextureButton" parent="." index="12"]
+[node name="M6" type="TextureButton" parent="Maps" index="5"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -342,7 +358,7 @@ texture_normal = ExtResource( 11 )
 expand = true
 _sections_unfolded = [ "Textures" ]
 
-[node name="M1" type="TextureButton" parent="." index="13"]
+[node name="M1" type="TextureButton" parent="Maps" index="6"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -367,7 +383,7 @@ texture_normal = ExtResource( 12 )
 expand = true
 _sections_unfolded = [ "Textures" ]
 
-[node name="M8" type="TextureButton" parent="." index="14"]
+[node name="M8" type="TextureButton" parent="Maps" index="7"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -392,10 +408,51 @@ texture_normal = ExtResource( 13 )
 expand = true
 _sections_unfolded = [ "Textures" ]
 
+[node name="Home" type="TextureButton" parent="." index="8"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 514.0
+margin_top = 1127.0
+margin_right = 647.0
+margin_bottom = 1254.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+texture_normal = ExtResource( 14 )
+expand = true
+_sections_unfolded = [ "Textures" ]
+
 [connection signal="pressed" from="object" to="." method="_on_object_pressed"]
 
 [connection signal="pressed" from="hand" to="." method="_on_hand_pressed"]
 
 [connection signal="pressed" from="map" to="." method="_on_map_pressed"]
+
+[connection signal="pressed" from="Maps/M7" to="." method="_on_M7_pressed"]
+
+[connection signal="pressed" from="Maps/M2" to="." method="_on_M2_pressed"]
+
+[connection signal="pressed" from="Maps/M3" to="." method="_on_M3_pressed"]
+
+[connection signal="pressed" from="Maps/M5" to="." method="_on_M5_pressed"]
+
+[connection signal="pressed" from="Maps/M6" to="." method="_on_M6_pressed"]
+
+[connection signal="pressed" from="Maps/M1" to="." method="_on_M1_pressed"]
+
+[connection signal="pressed" from="Maps/M8" to="." method="_on_M8_pressed"]
+
+[connection signal="pressed" from="Home" to="." method="_on_Home_pressed"]
 
 

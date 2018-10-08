@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Elektronomia - Vitality.ogg-48edba3dde0727bbfb2ee5a320cbfc13.oggstr"
+
+[deps]
+
+source_file="res://Means/Sounds/Elektronomia - Vitality.ogg"
+dest_files=[ "res://.import/Elektronomia - Vitality.ogg-48edba3dde0727bbfb2ee5a320cbfc13.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
