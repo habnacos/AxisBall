@@ -1,7 +1,7 @@
 extends Node2D
 #					Radius	Sacale	dough
 var _baseball = 	[0.65,  0.65,   30]
-var _basketball = 	[2.3,   0.45,   100]
+var _basketball = 	[1,   1,   100]
 var _soccer = 		[1.8,   0.65,   80]
 
 func _ready():

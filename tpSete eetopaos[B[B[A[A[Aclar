@@ -1,0 +1,80 @@
+[33mcommit bc9ea15330c6af8367e1cc0bdab1293c01d605a8[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: JanioJimenez <janiojimenez12@gmail.com>
+Date:   Thu Nov 1 15:12:03 2018 -0500
+
+    actualizando cambios de botones
+
+[33mcommit 485c2bc680c940a44bddec5cb2600ce14cc7f3e0[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: JanioJimenez <janiojimenez12@gmail.com>
+Date:   Mon Oct 8 17:20:42 2018 -0500
+
+    Menus con focus terminado
+
+[33mcommit ac0fe4d162457b76f2fd702aac0806eb4da5c5b3[m
+Merge: 9c1558e 74825d0
+Author: habib navarro <habnacos@gmail.com>
+Date:   Mon Oct 8 13:59:50 2018 -0500
+
+    Merge branch 'master' of https://github.com/habnacos/AxisBall
+
+[33mcommit 9c1558e471c7f64c27c0a8d659810fc91b7c9f4a[m
+Merge: 07f7939 4218e94
+Author: habib navarro <habnacos@gmail.com>
+Date:   Mon Oct 8 13:59:19 2018 -0500
+
+    Cambio de objeto
+
+[33mcommit 74825d0e00ba303d3462dc0e66a05370db12dda4[m
+Author: JanioJimenez <janiojimenez12@gmail.com>
+Date:   Mon Oct 8 10:20:15 2018 -0500
+
+    menu score
+
+[33mcommit 07f7939b574628a42208c6dd515c6a01da7525c7[m
+Author: habib navarro <habnacos@gmail.com>
+Date:   Mon Oct 8 09:12:22 2018 -0500
+
+    Json
+
+[33mcommit 4218e949f3e2e0da892155e8bcd328c9764317e4[m
+Author: JanioJimenez <janiojimenez12@gmail.com>
+Date:   Mon Oct 8 08:43:39 2018 -0500
+
+    Diseño de menus terminado
+
+[33mcommit 02b7876200ba7dcd7c6c4c5945d6d50a500dc1a7[m
+Author: JanioJimenez <janiojimenez12@gmail.com>
+Date:   Sun Oct 7 20:43:05 2018 -0500
+
+    Menus Skins
+
+[33mcommit 5507338e6c9cab9e855aea6c9190b78694623967[m
+Merge: cdab213 854e29e
+Author: JanioJimenez <janiojimenez12@gmail.com>
+Date:   Sun Oct 7 19:42:57 2018 -0500
+
+    Merge branch 'master' of github.com:habnacos/AxisBall
+
+[33mcommit cdab213cefe15941526a2b2a6998d22bced7b803[m
+Author: JanioJimenez <janiojimenez12@gmail.com>
+Date:   Sun Oct 7 19:41:52 2018 -0500
+
+    menu skin ball
+
+[33mcommit 854e29ed20471c6c51d7d324dfcbf21d0d371552[m
+Author: habib navarro <habnacos@gmail.com>
+Date:   Sun Oct 7 18:05:43 2018 -0500
+
+    Cambio de mano y balón
+
+[33mcommit 5712b0f14920b29021b80e1b5d0c4ef6e98b2b64[m
+Author: habib navarro <habnacos@gmail.com>
+Date:   Sun Oct 7 14:16:37 2018 -0500
+
+    Balls
+
+[33mcommit a5e8a2ccff45569ac6305d1a62de0372f679398c[m
+Author: habib navarro <habnacos@gmail.com>
+Date:   Sat Oct 6 18:32:07 2018 -0500
+
+    Adelanto
