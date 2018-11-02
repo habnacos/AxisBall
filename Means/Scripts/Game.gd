@@ -105,3 +105,8 @@ func _on_SoundButton2_pressed():
 	$AudioStreamPlayer.play()
 	$Skins/SoundButton.show()
 	$Skins/SoundButton2.hide()
+
+
+func _on_CreditsButton_pressed():
+	_isGame = false
+	$Credits.popup()
