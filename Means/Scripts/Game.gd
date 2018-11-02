@@ -6,6 +6,7 @@ var _skins
 var _isGame = true
 
 func _ready():
+	set_process_input(true)
 	# var _file = File.new()
 	# _file.open("res://Means/records.gd", File.READ)
 	# _skins = JSON.parse(_file.get_as_text())
@@ -15,6 +16,11 @@ func _ready():
 	$SkinMap.map()
 	$AudioStreamPlayer.play()
 	game_new()
+
+#func _input(event):
+#	if event is inputeventscreentouch:
+#		if event.position.y <= 1200:
+#			$credits.hide()
 
 func game_new():
 	$Skins.show()
@@ -87,7 +93,6 @@ func _on_SkinMap_hand():
 	$SkinBall._object.hide()
 	$Skins.hide()
 
-
 func _on_SkinMap_map():
 	$SkinMap/Menu.show()
 	$SkinBall/Menu.hide()
@@ -106,7 +111,5 @@ func _on_SoundButton2_pressed():
 	$Skins/SoundButton.show()
 	$Skins/SoundButton2.hide()
 
-
 func _on_CreditsButton_pressed():
-	_isGame = false
 	$Credits.popup()

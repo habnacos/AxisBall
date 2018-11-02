@@ -10,7 +10,7 @@
 [ext_resource path="res://Means/Sprites/Maps/m8.png" type="Texture" id=8]
 [ext_resource path="res://Means/Sprites/Maps/mU.png" type="Texture" id=9]
 
-[node name="Map" type="StaticBody2D"]
+[node name="Map" type="StaticBody2D" index="0"]
 
 input_pickable = false
 collision_layer = 1
@@ -96,6 +96,6 @@ _sections_unfolded = [ "Transform", "Z Index" ]
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." index="8"]
 
 build_mode = 0
-polygon = PoolVector2Array( -134.206, -2768.06, 926.69, -2755.72, 1390.13, 1287.35, 827.655, 1281.58, 840.002, -2632.25, -61.2915, -2632.25, -115.884, 1267.92, -619.288, 1265.22 )
+polygon = PoolVector2Array( -134.206, -2768.06, 926.69, -2755.72, 1390.13, 1287.35, 834.242, 969.106, 834.214, -285.455, -90.8293, -285.455, -91.2101, 937.194, -619.288, 1265.22 )
 
 

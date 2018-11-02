@@ -1,8 +1,8 @@
 extends RigidBody2D
 #					Radius	Sacale	mass
 var _baseball = 	[0.65,  0.65,   30]
-var _basketball = 	[1.8,   1,   75]
-var _soccer = 		[1.8,   0.65,   80]
+var _basketball = 	[1.8,   1,   30]
+var _soccer = 		[1.8,   0.65,   30]
 
 func _ready():
 	pass
