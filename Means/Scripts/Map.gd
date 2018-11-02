@@ -11,6 +11,14 @@ func _ready():
 	$Map8.hide()
 
 func map(var map):
+	$Map.hide()
+	$Map2.hide()
+	$Map3.hide()
+	$Map4.hide()
+	$Map5.hide()
+	$Map6.hide()
+	$Map7.hide()
+	$Map8.hide()
 	if map == 1:
 		$Map.show()
 	if map == 2:

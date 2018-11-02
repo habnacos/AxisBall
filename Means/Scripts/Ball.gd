@@ -15,7 +15,7 @@ func ball(var _ball):
 	if _ball == "Basketball":
 		$AnimatedSprite.scale = Vector2(_basketball[1], _basketball[1])
 		$CollisionShape2D.scale = Vector2(_basketball[0], _basketball[0])
-	if _ball == "Soccer":
+	if _ball == "Soccer" || _ball == "Soccer2":
 		$AnimatedSprite.scale = Vector2(_soccer[1], _soccer[1])
 		$CollisionShape2D.scale = Vector2(_soccer[0], _soccer[0])
 

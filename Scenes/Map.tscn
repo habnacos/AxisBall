@@ -10,7 +10,7 @@
 [ext_resource path="res://Means/Sprites/Maps/m8.png" type="Texture" id=8]
 [ext_resource path="res://Means/Sprites/Maps/mU.png" type="Texture" id=9]
 
-[node name="Map" type="StaticBody2D" index="0"]
+[node name="Map" type="StaticBody2D"]
 
 input_pickable = false
 collision_layer = 1
@@ -60,7 +60,7 @@ _sections_unfolded = [ "Transform", "Z Index" ]
 [node name="Map5" type="Sprite" parent="." index="4"]
 
 visible = false
-scale = Vector2( 1.79315, 1.77714 )
+scale = Vector2( 2.39808, 2.39422 )
 texture = ExtResource( 6 )
 centered = false
 region_rect = Rect2( 0, 0, 720, 1280 )

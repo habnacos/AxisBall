@@ -6,7 +6,7 @@
 [ext_resource path="res://Means/Sprites/Hands/3.png" type="Texture" id=4]
 [ext_resource path="res://Means/Sprites/Hands/4.png" type="Texture" id=5]
 
-[node name="Hand" type="KinematicBody2D"]
+[node name="Hand" type="KinematicBody2D" index="0"]
 
 input_pickable = false
 collision_layer = 1
@@ -18,33 +18,35 @@ _sections_unfolded = [ "Collision", "Transform", "collision" ]
 [node name="H1" type="Sprite" parent="." index="0"]
 
 visible = false
-scale = Vector2( 1.7, 1.7 )
+scale = Vector2( 2, 2 )
 texture = ExtResource( 2 )
 _sections_unfolded = [ "Transform" ]
 
 [node name="H2" type="Sprite" parent="." index="1"]
 
 visible = false
-scale = Vector2( 1.7, 1.7 )
+scale = Vector2( 2, 2 )
 texture = ExtResource( 3 )
 _sections_unfolded = [ "Transform" ]
 
 [node name="H3" type="Sprite" parent="." index="2"]
 
-visible = false
-scale = Vector2( 1.7, 1.7 )
+scale = Vector2( 2, 2 )
 texture = ExtResource( 4 )
 _sections_unfolded = [ "Transform" ]
 
 [node name="H4" type="Sprite" parent="." index="3"]
 
-scale = Vector2( 1.7, 1.7 )
+visible = false
+scale = Vector2( 2, 2 )
 texture = ExtResource( 5 )
 _sections_unfolded = [ "Transform" ]
 
 [node name="C1_2" type="CollisionPolygon2D" parent="." index="4"]
 
-position = Vector2( -381.533, -984.337 )
+visible = false
+position = Vector2( -302.755, -783.44 )
+scale = Vector2( 0.8, 0.8 )
 build_mode = 0
 polygon = PoolVector2Array( 310.777, 810.59, 318.075, 803.292, 328.026, 801.965, 335.324, 805.946, 337.977, 813.907, 341.294, 840.444, 346.602, 867.644, 368.495, 880.249, 390.387, 886.22, 398.348, 904.795, 418.914, 913.42, 424.222, 923.371, 422.895, 940.62, 442.798, 950.571, 449.432, 961.186, 448.768, 977.772, 453.412, 983.079, 450.095, 993.03, 446.778, 1018.24, 432.846, 1048.76, 432.183, 1078.61, 427.539, 1113.11, 435.5, 1153.58, 412.28, 1163.53, 363.851, 1162.87, 343.948, 1154.9, 346.602, 1115.1, 339.304, 1077.28, 339.304, 1059.37, 321.392, 1017.58, 322.719, 997.674, 316.748, 987.723, 320.728, 977.772, 322.719, 912.093, 316.748, 894.844, 316.748, 876.932, 310.777, 852.385 )
 disabled = true
@@ -52,8 +54,10 @@ _sections_unfolded = [ "Transform" ]
 
 [node name="C3_4" type="CollisionPolygon2D" parent="." index="5"]
 
+scale = Vector2( 0.8, 0.8 )
 build_mode = 0
 polygon = PoolVector2Array( -4.74982, -142.448, 2.33326, -144.165, 12.2066, -144.38, 20.3629, -140.946, 27.0167, -131.502, 30.6656, -119.696, 32.9341, -100.561, 25.6365, -72.0335, 13.695, -46.8235, 19.0023, -22.277, 60.7978, -6.35489, 78.7102, 17.5282, 79.3736, 38.7577, 62.7881, 56.0066, 70.9999, 68, 68.9999, 89, 51.9999, 102, 54.9999, 117, 43.9999, 131, 31.9999, 137, 27.9999, 148, 4.99988, 155, -23.0001, 142, -39.0001, 140, -55.0001, 125, -78.0001, 105, -89.0001, 69, -86.0001, 44, -65.0001, 19, -53.0001, -11, -44.0001, -30, -43.0001, -50, -25.6494, -77.5969, -19.1334, -99.5886, -13.4319, -110.177, -11.8029, -131.354 )
 disabled = true
+_sections_unfolded = [ "Transform", "Z Index" ]
 
 

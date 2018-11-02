@@ -1,30 +1,29 @@
-[gd_scene load_steps=21 format=2]
+[gd_scene load_steps=20 format=2]
 
 [ext_resource path="res://Means/Scripts/Skins.gd" type="Script" id=1]
-[ext_resource path="res://Scenes/Map.tscn" type="PackedScene" id=2]
-[ext_resource path="res://Means/Sprites/Skins/ball/bola1.png" type="Texture" id=3]
-[ext_resource path="res://Means/Sprites/Skins/ball1.png" type="Texture" id=4]
-[ext_resource path="res://Means/Sprites/Skins/ball/bola2.png" type="Texture" id=5]
-[ext_resource path="res://Means/Sprites/Skins/ball2.png" type="Texture" id=6]
-[ext_resource path="res://Means/Sprites/Skins/ball/bola3.png" type="Texture" id=7]
-[ext_resource path="res://Means/Sprites/Skins/baske.png" type="Texture" id=8]
-[ext_resource path="res://Means/Sprites/Skins/ball/bola4.png" type="Texture" id=9]
-[ext_resource path="res://Means/Sprites/Skins/ball/bola5.png" type="Texture" id=10]
-[ext_resource path="res://Means/Sprites/Skins/ball/bola6.png" type="Texture" id=11]
-[ext_resource path="res://Means/Sprites/Skins/ball/ball7.png" type="Texture" id=12]
-[ext_resource path="res://Means/Sprites/Skins/ball/bola8.png" type="Texture" id=13]
-[ext_resource path="res://Means/Sprites/Skins/ball/bola9.png" type="Texture" id=14]
-[ext_resource path="res://Means/Fonts/Starjedi.ttf" type="DynamicFontData" id=15]
-[ext_resource path="res://Means/Sprites/Buttons/barra.png" type="Texture" id=16]
-[ext_resource path="res://Means/Sprites/Buttons/barraFucsia.png" type="Texture" id=17]
-[ext_resource path="res://Means/Sprites/Buttons/Home.png" type="Texture" id=18]
+[ext_resource path="res://Means/Sprites/Skins/ball/bola1.png" type="Texture" id=2]
+[ext_resource path="res://Means/Sprites/Skins/ball1.png" type="Texture" id=3]
+[ext_resource path="res://Means/Sprites/Skins/ball/bola2.png" type="Texture" id=4]
+[ext_resource path="res://Means/Sprites/Skins/ball2.png" type="Texture" id=5]
+[ext_resource path="res://Means/Sprites/Skins/ball/bola3.png" type="Texture" id=6]
+[ext_resource path="res://Means/Sprites/Skins/baske.png" type="Texture" id=7]
+[ext_resource path="res://Means/Sprites/Skins/ball/bola4.png" type="Texture" id=8]
+[ext_resource path="res://Means/Sprites/Skins/ball/bola5.png" type="Texture" id=9]
+[ext_resource path="res://Means/Sprites/Skins/ball/bola6.png" type="Texture" id=10]
+[ext_resource path="res://Means/Sprites/Skins/ball/ball7.png" type="Texture" id=11]
+[ext_resource path="res://Means/Sprites/Skins/ball/bola8.png" type="Texture" id=12]
+[ext_resource path="res://Means/Sprites/Skins/ball/bola9.png" type="Texture" id=13]
+[ext_resource path="res://Means/Fonts/Starjedi.ttf" type="DynamicFontData" id=14]
+[ext_resource path="res://Means/Sprites/Buttons/barra.png" type="Texture" id=15]
+[ext_resource path="res://Means/Sprites/Buttons/barraFucsia.png" type="Texture" id=16]
+[ext_resource path="res://Means/Sprites/Buttons/Home.png" type="Texture" id=17]
 
 [sub_resource type="DynamicFont" id=1]
 
 size = 101
 use_mipmaps = false
 use_filter = false
-font_data = ExtResource( 15 )
+font_data = ExtResource( 14 )
 _sections_unfolded = [ "Font", "Font/fallback", "Settings" ]
 
 [sub_resource type="DynamicFont" id=2]
@@ -32,16 +31,31 @@ _sections_unfolded = [ "Font", "Font/fallback", "Settings" ]
 size = 36
 use_mipmaps = false
 use_filter = false
-font_data = ExtResource( 15 )
+font_data = ExtResource( 14 )
 _sections_unfolded = [ "Font", "Settings" ]
 
 [node name="SkinBall" type="Node"]
 
 script = ExtResource( 1 )
 
-[node name="Map" parent="." index="0" instance=ExtResource( 2 )]
+[node name="Menu" type="Control" parent="." index="0"]
 
-[node name="Balls" type="Container" parent="." index="1"]
+editor/display_folded = true
+visible = false
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 40.0
+margin_bottom = 40.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+
+[node name="Balls" type="Container" parent="Menu" index="0"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -56,7 +70,7 @@ mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
 
-[node name="ball1" type="TextureButton" parent="Balls" index="0"]
+[node name="ball1" type="TextureButton" parent="Menu" index="1"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -77,12 +91,12 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-texture_normal = ExtResource( 3 )
-texture_focused = ExtResource( 4 )
+texture_normal = ExtResource( 2 )
+texture_focused = ExtResource( 3 )
 expand = true
 _sections_unfolded = [ "Textures", "Theme", "Visibility" ]
 
-[node name="ball2" type="TextureButton" parent="Balls" index="1"]
+[node name="ball2" type="TextureButton" parent="Menu" index="2"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -103,12 +117,12 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-texture_normal = ExtResource( 5 )
-texture_focused = ExtResource( 6 )
+texture_normal = ExtResource( 4 )
+texture_focused = ExtResource( 5 )
 expand = true
 _sections_unfolded = [ "Textures" ]
 
-[node name="ball3" type="TextureButton" parent="Balls" index="2"]
+[node name="ball3" type="TextureButton" parent="Menu" index="3"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -129,12 +143,12 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-texture_normal = ExtResource( 7 )
-texture_focused = ExtResource( 8 )
+texture_normal = ExtResource( 6 )
+texture_focused = ExtResource( 7 )
 expand = true
 _sections_unfolded = [ "Textures" ]
 
-[node name="ball4" type="TextureButton" parent="Balls" index="3"]
+[node name="ball4" type="TextureButton" parent="Menu" index="4"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -155,11 +169,11 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-texture_normal = ExtResource( 9 )
+texture_normal = ExtResource( 8 )
 expand = true
 _sections_unfolded = [ "Textures" ]
 
-[node name="ball5" type="TextureButton" parent="Balls" index="4"]
+[node name="ball5" type="TextureButton" parent="Menu" index="5"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -180,10 +194,10 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-texture_normal = ExtResource( 10 )
+texture_normal = ExtResource( 9 )
 _sections_unfolded = [ "Textures" ]
 
-[node name="ball6" type="TextureButton" parent="Balls" index="5"]
+[node name="ball6" type="TextureButton" parent="Menu" index="6"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -204,11 +218,11 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-texture_normal = ExtResource( 11 )
+texture_normal = ExtResource( 10 )
 expand = true
 _sections_unfolded = [ "Textures" ]
 
-[node name="ball7" type="TextureButton" parent="Balls" index="6"]
+[node name="ball7" type="TextureButton" parent="Menu" index="7"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -229,11 +243,11 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-texture_normal = ExtResource( 12 )
+texture_normal = ExtResource( 11 )
 expand = true
 _sections_unfolded = [ "Textures" ]
 
-[node name="ball8" type="TextureButton" parent="Balls" index="7"]
+[node name="ball8" type="TextureButton" parent="Menu" index="8"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -254,11 +268,11 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-texture_normal = ExtResource( 13 )
+texture_normal = ExtResource( 12 )
 expand = true
 _sections_unfolded = [ "Textures" ]
 
-[node name="ball9" type="TextureButton" parent="Balls" index="8"]
+[node name="ball9" type="TextureButton" parent="Menu" index="9"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -279,11 +293,11 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-texture_normal = ExtResource( 14 )
+texture_normal = ExtResource( 13 )
 expand = true
 _sections_unfolded = [ "Textures" ]
 
-[node name="skin" type="Label" parent="." index="2"]
+[node name="skin" type="Label" parent="Menu" index="10"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -306,7 +320,7 @@ lines_skipped = 0
 max_lines_visible = -1
 _sections_unfolded = [ "custom_fonts" ]
 
-[node name="object" type="Button" parent="." index="3"]
+[node name="object" type="Button" parent="Menu" index="11"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -333,7 +347,7 @@ flat = true
 align = 1
 _sections_unfolded = [ "custom_fonts" ]
 
-[node name="hand" type="Button" parent="." index="4"]
+[node name="hand" type="Button" parent="Menu" index="12"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -360,7 +374,7 @@ flat = true
 align = 1
 _sections_unfolded = [ "custom_fonts" ]
 
-[node name="map" type="Button" parent="." index="5"]
+[node name="map" type="Button" parent="Menu" index="13"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -387,7 +401,7 @@ flat = true
 align = 1
 _sections_unfolded = [ "custom_fonts" ]
 
-[node name="barra" type="TextureButton" parent="." index="6"]
+[node name="barra" type="TextureButton" parent="Menu" index="14"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -408,18 +422,20 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-texture_normal = ExtResource( 16 )
+texture_normal = ExtResource( 15 )
 expand = true
 _sections_unfolded = [ "Textures" ]
 
-[node name="barraFucsia" type="TextureButton" parent="barra" index="0"]
+[node name="barraFucsia" type="TextureButton" parent="Menu" index="15"]
 
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_right = 215.0
-margin_bottom = 13.0
+margin_left = 84.0
+margin_top = 399.0
+margin_right = 299.0
+margin_bottom = 412.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 focus_mode = 2
@@ -431,11 +447,11 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-texture_normal = ExtResource( 17 )
+texture_normal = ExtResource( 16 )
 expand = true
 _sections_unfolded = [ "Textures" ]
 
-[node name="Home" type="TextureButton" parent="." index="7"]
+[node name="Home" type="TextureButton" parent="Menu" index="16"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -456,24 +472,34 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-texture_normal = ExtResource( 18 )
+texture_normal = ExtResource( 17 )
 expand = true
 _sections_unfolded = [ "Textures" ]
 
-[connection signal="pressed" from="Balls/ball1" to="." method="_on_ball1_pressed"]
+[node name="PositionHand" type="Position2D" parent="." index="1"]
 
-[connection signal="pressed" from="Balls/ball2" to="." method="_on_ball2_pressed"]
+position = Vector2( 403.295, 950 )
+_sections_unfolded = [ "Transform" ]
 
-[connection signal="pressed" from="Balls/ball3" to="." method="_on_ball3_pressed"]
+[node name="PositionObject" type="Position2D" parent="." index="2"]
 
-[connection signal="pressed" from="Balls/ball5" to="." method="_on_ball5_pressed"]
+position = Vector2( 380, 450 )
+_sections_unfolded = [ "Transform" ]
 
-[connection signal="pressed" from="object" to="." method="_on_object_pressed"]
+[connection signal="pressed" from="Menu/ball1" to="." method="_on_ball1_pressed"]
 
-[connection signal="pressed" from="hand" to="." method="_on_hand_pressed"]
+[connection signal="pressed" from="Menu/ball2" to="." method="_on_ball2_pressed"]
 
-[connection signal="pressed" from="map" to="." method="_on_map_pressed"]
+[connection signal="pressed" from="Menu/ball3" to="." method="_on_ball3_pressed"]
 
-[connection signal="pressed" from="Home" to="." method="_on_Home_pressed"]
+[connection signal="pressed" from="Menu/ball5" to="." method="_on_ball5_pressed"]
+
+[connection signal="pressed" from="Menu/object" to="." method="_on_object_pressed"]
+
+[connection signal="pressed" from="Menu/hand" to="." method="_on_hand_pressed"]
+
+[connection signal="pressed" from="Menu/map" to="." method="_on_map_pressed"]
+
+[connection signal="pressed" from="Menu/Home" to="." method="_on_Home_pressed"]
 
 

@@ -1,14 +1,10 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Means/Scripts/Main.gd" type="Script" id=1]
 [ext_resource path="res://Scenes/Game.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Scenes/Map.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Means/letras.png" type="Texture" id=4]
 [ext_resource path="res://Means/Fonts/Run! Demo.otf" type="DynamicFontData" id=5]
-[ext_resource path="res://Means/Sprites/Buttons/puntuacion.png" type="Texture" id=6]
-[ext_resource path="res://Means/Sprites/Buttons/skin.png" type="Texture" id=7]
-[ext_resource path="res://Means/Sprites/Buttons/sonido.png" type="Texture" id=8]
-[ext_resource path="res://Means/Sounds/Elektronomia - Vitality.ogg" type="AudioStream" id=9]
 
 [sub_resource type="DynamicFont" id=1]
 
@@ -18,7 +14,7 @@ use_filter = false
 font_data = ExtResource( 5 )
 _sections_unfolded = [ "Font", "Settings" ]
 
-[node name="Menu" type="Node"]
+[node name="Menu" type="Node" index="0"]
 
 script = ExtResource( 1 )
 Game = ExtResource( 2 )
@@ -36,20 +32,20 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 232.0
-margin_top = 927.0
-margin_right = 498.0
-margin_bottom = 1020.0
+margin_left = 9.0
+margin_top = 733.0
+margin_right = 723.0
+margin_bottom = 1144.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
-focus_mode = 2
 mouse_filter = 0
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
 custom_fonts/font = SubResource( 1 )
 toggle_mode = false
-enabled_focus_mode = 2
+action_mode = 0
+enabled_focus_mode = 0
 shortcut = null
 group = null
 text = "START"
@@ -57,96 +53,6 @@ flat = true
 align = 1
 _sections_unfolded = [ "custom_fonts" ]
 
-[node name="ScoresButton" type="Button" parent="." index="3"]
-
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_left = 72.0
-margin_top = 1070.0
-margin_right = 189.0
-margin_bottom = 1180.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-focus_mode = 2
-mouse_filter = 0
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
-toggle_mode = false
-enabled_focus_mode = 2
-shortcut = null
-group = null
-icon = ExtResource( 6 )
-flat = true
-align = 1
-_sections_unfolded = [ "Rect" ]
-
-[node name="SkinsButton" type="Button" parent="." index="4"]
-
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_left = 311.0
-margin_top = 1070.0
-margin_right = 428.0
-margin_bottom = 1180.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-focus_mode = 2
-mouse_filter = 0
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
-toggle_mode = false
-enabled_focus_mode = 2
-shortcut = null
-group = null
-icon = ExtResource( 7 )
-flat = true
-align = 1
-_sections_unfolded = [ "Rect" ]
-
-[node name="SoundButton" type="Button" parent="." index="5"]
-
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_left = 528.0
-margin_top = 1070.0
-margin_right = 646.0
-margin_bottom = 1180.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-focus_mode = 2
-mouse_filter = 0
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
-toggle_mode = false
-enabled_focus_mode = 2
-shortcut = null
-group = null
-icon = ExtResource( 8 )
-flat = true
-align = 1
-
-[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." index="6"]
-
-stream = ExtResource( 9 )
-volume_db = 0.0
-pitch_scale = 1.0
-autoplay = true
-max_distance = 2000.0
-attenuation = 1.0
-bus = "Master"
-area_mask = 1
-
 [connection signal="pressed" from="StartButton" to="." method="_on_StartButton_pressed"]
-
-[connection signal="pressed" from="SkinsButton" to="." method="_on_SkinsButton_pressed"]
 
 
